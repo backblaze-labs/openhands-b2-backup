@@ -1,8 +1,10 @@
 # openhands-b2-backup
 
+**Encrypted, incremental, off-site backups for your AI coding agent — powered by [Backblaze B2 cloud storage](https://blze.ai/storage).**
+
 Incremental, **encrypted** backup of your [OpenHands](https://github.com/All-Hands-AI/OpenHands) conversations, settings, and secrets to [Backblaze B2](https://www.backblaze.com/cloud-storage).
 
-Built on [`@backblaze-labs/agent-backup-core`](https://github.com/backblaze-b2-samples/agent-backup-core).
+Built on [`@backblaze-labs/agent-backup-core`](https://github.com/backblaze-labs/agent-backup-core).
 
 ## Why
 
@@ -44,6 +46,11 @@ Caches and lock/temp files are excluded. No SQLite is used in local mode, so no 
 - **Also set OpenHands' own `OH_SECRET_KEY`** if you can — it Fernet-encrypts secrets on disk before this tool ever reads them (defense in depth). Without it, OpenHands redacts secrets on save and they won't restore.
 
 If you need backups with secrets fully stripped (e.g. to share), that requires field-level redaction, which this version does not do.
+
+## Learn more
+
+- [Backblaze B2 Cloud Storage](https://blze.ai/storage) — affordable, S3-compatible object storage
+- [agent-backup-core](https://github.com/backblaze-labs/agent-backup-core) — the shared backup engine powering this tool
 
 ## License
 
