@@ -33,6 +33,11 @@
     "typescript": "^5.9.0",
     "vitest": "^4.0.0"
   },
+  "pnpm": {
+    "overrides": {
+      "postcss": "^8.5.23"
+    }
+  },
   "engines": {
     "node": ">=22.5.0"
   },
